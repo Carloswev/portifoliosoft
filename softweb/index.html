@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoftWeb - Portfólio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>SoftWeb</h1>
+            <button id="sidebarToggle" class="sidebar-toggle">☰</button>
+            <nav>
+                <ul>
+                    <li><a href="#sobre"><i class="fas fa-info-circle"></i> Sobre</a></li>
+                    <li><a href="#servicos"><i class="fas fa-cogs"></i> Serviços</a></li>
+                    <li><a href="#projetos"><i class="fas fa-folder-open"></i> Projetos</a></li>
+                    <li><a href="contato.html"><i class="fas fa-envelope"></i> Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <aside id="sidebar" class="sidebar">
+        <button id="closeSidebar" class="close-sidebar">✖</button>
+        <nav>
+            <ul>
+                <li><a href="#sobre"><i class="fas fa-info-circle"></i> Sobre</a></li>
+                <li><a href="#servicos"><i class="fas fa-cogs"></i> Serviços</a></li>
+                <li><a href="#projetos"><i class="fas fa-folder-open"></i> Projetos</a></li>
+                <li><a href="contato.html"><i class="fas fa-envelope"></i> Contato</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main>
+        <section class="hero">
+            <h2>Transforme sua ideia em um produto digital</h2>
+            <p>Desenvolvemos sistemas e cursos de programação sob medida para você.</p>
+            <a href="#contato" class="btn">Entre em Contato</a>
+        </section>
+
+        <section id="sobre" class="section">
+            <h2>Sobre Nós</h2>
+            <p>A SoftWeb é uma empresa especializada em desenvolvimento de sistemas e cursos de programação, focada em trazer soluções inovadoras e eficientes para nossos clientes.</p>
+        </section>
+
+        <section id="servicos" class="section">
+            <h2>Nossos Serviços</h2>
+            <ul>
+                <li><i class="fas fa-check-circle"></i> Desenvolvimento de Sites Personalizados</li>
+                <li><i class="fas fa-check-circle"></i> Criação de Cursos Online</li>
+                <li><i class="fas fa-check-circle"></i> Consultoria em TI</li>
+            </ul>
+        </section>
+
+        <section id="projetos" class="section">
+            <h2>Nossos Projetos</h2>
+            <p>Explore nossos projetos mais recentes e descubra como podemos ajudar você.</p>
+            <div class="cards">
+                <div class="card">
+                    <h3>Projeto 1 <i class="fas fa-laptop-code"></i></h3>
+                    <p>Descrição breve do projeto 1.</p>
+                </div>
+                <div class="card">
+                    <h3>Projeto 2 <i class="fas fa-laptop-code"></i></h3>
+                    <p>Descrição breve do projeto 2.</p>
+                </div>
+                <div class="card">
+                    <h3>Projeto 3 <i class="fas fa-laptop-code"></i></h3>
+                    <p>Descrição breve do projeto 3.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <h2>SoftWeb</h2>
+            <p>&copy; 2024 SoftWeb. Todos os direitos reservados.</p>
+            <div class="footer-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle sidebar
+        const sidebarToggle = document.getElementById('sidebarToggle');
+        const sidebar = document.getElementById('sidebar');
+        const closeSidebar = document.getElementById('closeSidebar');
+
+        sidebarToggle.onclick = function() {
+            sidebar.classList.add('active');
+        };
+
+        closeSidebar.onclick = function() {
+            sidebar.classList.remove('active');
+        };
+    </script>
+</body>
+</html>
